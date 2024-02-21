@@ -1,5 +1,5 @@
 - name: Check that the '/etc/pve/.version' exists
-  stat:
+  ansible.builtin.stat:
     path: /etc/pve/.version
   register: stat_result
 
